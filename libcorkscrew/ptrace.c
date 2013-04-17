@@ -129,7 +129,6 @@ void free_ptrace_context(ptrace_context_t* context) {
         free_ptrace_map_info_data(mi);
     }
     free_map_info_list(context->map_info_list);
-    free(context);
 }
 
 void find_symbol_ptrace(const ptrace_context_t* context,
